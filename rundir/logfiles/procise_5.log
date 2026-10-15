@@ -1,0 +1,267 @@
+Procise 2022.1
+SVN Version : 26989
+Build  time : 2022/06/24 09:06:18
+Start  time : 2022-09-24 11:27:40
+>>set_device fmql45t900
+  set_device elapsed_time 4.06 seconds, cpu_time 4.08 seconds
+  set_device used memory 889MB, procise used peak memory 961MB, current used memory 705MB
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_post_map -no_hier
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  read_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir/.cf33605c63cadd6e8f9f4d3509c100f0.phy
+  Read FDC D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir/ttc_test_wrapper_placed.fdc
+  load_design elapsed_time 0.33 seconds, cpu_time 0.34 seconds
+  load_design used memory 10MB, procise used peak memory 961MB, current used memory 722MB
+>>>Launching IAR...
+init_chain -cable_type jlink;program_image -bin D:/Work/03_PSOC/06_20_Demo/01_Linux_Led/image2/BOOT.bin -fsbl D:/Program Files/Fudan Micro/Procise/data/fmsh_bootloader/FSBL_qspi.out -offset 0 -flash_type qspi0_single -blank_check 0 -flash_verify 0 -erase_timeout 300 -all_info 0 -rst_flag 1 -read_back 0 -rst_delay 200 -speed 10000 
+>>init_chain -cable_type jlink
+  hw_server:  Select Device Successfully
+  hw_server:  Set Jlink speed to 6000khz failed
+  hw_server:  Current Jlink speed is 65534khz
+  hw_server:  Jlink speed is already 6000khz
+  hw_server:  JTAG tap: Procise found HwServer chain_info: 0x03727093 (mfg:0x049(FMSH), part:0x3727(xc7z020), ver:0x0)
+  hw_server:  read rsvd_reg_7
+  hw_server:  read rsvd value 0x00000000 ! 
+
+  hw_server:  JTAG tap: Procise found HwServer chain_info: 0x4ba00477 (mfg:0x23b(ARM), part:0xba00(arm_dap), ver:0x4)
+  ----------------------------------------------------------------------
+  device_id:    00000011011100100111000010010011
+  manufacturer: FMSH
+  part_name:    fmql20
+  part_id:      0
+  ir_length:    6
+  version:      0
+  step_id:      0
+  ----------------------------------------------------------------------
+  device_id:    01001011101000000000010001110111
+  manufacturer: FMSH
+  part_name:    ps_dap
+  part_id:      1
+  ir_length:    4
+  version:      0
+  step_id:      0
+  hw_server:  SVF instructions excute success
+  init_chain elapsed_time 2.69 seconds, cpu_time 0.05 seconds
+  init_chain used memory 1MB, procise used peak memory 1081MB, current used memory 167MB
+>>program_image -bin D:/Work/03_PSOC/06_20_Demo/01_Linux_Led/image2/BOOT.bin -fsbl D:/Program Files/Fudan Micro/Procise/data/fmsh_bootloader/FSBL_qspi.out -offset 0 -flash_type qspi0_single -blank_check 0 -flash_verify 0 -erase_timeout 300 -all_info 0 -rst_flag 1 -read_back 0 -rst_delay 200 -speed 10000
+  hw_server:  Accepting 'procise' connection 1768 on tcp 8888
+  hw_server:  hardware reset flag is 1, halt after deley 200ms
+  The number of devices is : 2
+  hw_server:  configure daisy chain with multiple devices to select device
+  hw_server:  tap_id = 0 preceeding = 0
+  hw_server:  Set Jlink speed to 10000khz successfully
+  hw_server:  reset operation start
+  hw_server:  Warning: JTAG scan chain interrogation failed: all zeroes
+  hw_server:  JTAG Detected
+  hw_server:  reset time value: 200ms
+  hw_server:  jtagcheck (reset time value > 0): 160ms, 50 times
+  hw_server:  cp15 read orignal retval: 0
+  hw_server:  cp15 read orignal value: 000c50878
+  hw_server:  cp15 write retval: 0
+  hw_server:  cp15 read change retval: 0
+  hw_server:  cp15 read change value: 000c5087a
+  hw_server:  Running FSBL...
+  hw_server:  flash_type_: 4
+  hw_server:  FSBL path: D:/Program Files/Fudan Micro/Procise/data/fmsh_bootloader/FSBL_qspi.out
+  hw_server:  Image File loaded in: 0x2494c
+  hw_server:  bp set value: 0x00025598
+  hw_server:  get pc value: 0x00025598
+  hw_server:  Finished running FSBL.
+  BIN in programImage
+  hw_server:  =========================================================
+  hw_server:  Running UBOOT...
+  hw_server:  U-boot path: D:/Program Files/Fudan Micro/Procise/data/fmsh_bootloader/u-boot
+  hw_server:  UBOOT info: 
+  hw_server:                
+              
+              U-Boot 2018.07-fmsh-g1f33dcb-dirty (Jun 16 2021 - 19:07:23 +0800) FMSH PSOC
+              
+              CPU: Cannot get CPU gescription, IDCODE: 0x7!
+              Model: FMSH PSOC DCC Board
+              Board:	FMSH PSOC Board
+              DRAM:  256 KiB
+              WARNING: Caches not enabled
+              Flash: ## Unknown flash on Bank 1 - Size = 0x00000000 = 0 MB
+              ## Unknown flash on Bank 2 - Size = 0x00000000 = 0 MB
+              0 Bytes
+              NAND:  nand_init_chip: nand_scan failed
+              0 MiB
+              In:    dcc@0
+              Out:   dcc@0
+              Err:   dcc@0
+              fmsh> 
+              
+  hw_server:  Finished running UBOOT.
+  hw_server:  =========================================================
+  hw_server:  BIN in executeBinFile!
+  hw_server:  set all info value: 0
+  hw_server:  erase timeout value: 300000
+  hw_server:  read back value: 0
+  hw_server:  Flash Type: Qspi0 Flash
+  hw_server:  Performing Erase Operation...
+  hw_server:  sf probe 0:0 :
+  hw_server:                
+              SF: Detected s25fl256s_64k JEDEC_MFR 0x01 JEDEC_ID 0x0219 JEDEC_EXT 0x4d01 with page size 256 Bytes, erase size 64 KiB, total 32 MiB
+              fmsh> 
+              
+  hw_server:  Start erase Operation...
+  hw_server:  erase offset 0x0 , size 0x4a0000
+  hw_server:  sf erase 0x0 0x4a0000
+  hw_server:  Erase Operation successful.
+  hw_server:  =========================================================
+  hw_server:  Performing Program Operation
+  hw_server:  Image File loaded in: 0xe2000000 , File Size: 4806080 bytes
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x0 0x20000
+  hw_server:  offset 0x0, size 0x20000
+  hw_server:  131072 bytes @ 0x0 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x20000 0x20000
+  hw_server:  offset 0x20000, size 0x20000
+  hw_server:  131072 bytes @ 0x20000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x40000 0x20000
+  hw_server:  offset 0x40000, size 0x20000
+  hw_server:  131072 bytes @ 0x40000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x60000 0x20000
+  hw_server:  offset 0x60000, size 0x20000
+  hw_server:  131072 bytes @ 0x60000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x80000 0x20000
+  hw_server:  offset 0x80000, size 0x20000
+  hw_server:  131072 bytes @ 0x80000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0xa0000 0x20000
+  hw_server:  offset 0xa0000, size 0x20000
+  hw_server:  131072 bytes @ 0xa0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0xc0000 0x20000
+  hw_server:  offset 0xc0000, size 0x20000
+  hw_server:  131072 bytes @ 0xc0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0xe0000 0x20000
+  hw_server:  offset 0xe0000, size 0x20000
+  hw_server:  131072 bytes @ 0xe0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x100000 0x20000
+  hw_server:  offset 0x100000, size 0x20000
+  hw_server:  131072 bytes @ 0x100000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x120000 0x20000
+  hw_server:  offset 0x120000, size 0x20000
+  hw_server:  131072 bytes @ 0x120000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x140000 0x20000
+  hw_server:  offset 0x140000, size 0x20000
+  hw_server:  131072 bytes @ 0x140000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x160000 0x20000
+  hw_server:  offset 0x160000, size 0x20000
+  hw_server:  131072 bytes @ 0x160000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x180000 0x20000
+  hw_server:  offset 0x180000, size 0x20000
+  hw_server:  131072 bytes @ 0x180000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x1a0000 0x20000
+  hw_server:  offset 0x1a0000, size 0x20000
+  hw_server:  131072 bytes @ 0x1a0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x1c0000 0x20000
+  hw_server:  offset 0x1c0000, size 0x20000
+  hw_server:  131072 bytes @ 0x1c0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x1e0000 0x20000
+  hw_server:  offset 0x1e0000, size 0x20000
+  hw_server:  131072 bytes @ 0x1e0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x200000 0x20000
+  hw_server:  offset 0x200000, size 0x20000
+  hw_server:  131072 bytes @ 0x200000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x220000 0x20000
+  hw_server:  offset 0x220000, size 0x20000
+  hw_server:  131072 bytes @ 0x220000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x240000 0x20000
+  hw_server:  offset 0x240000, size 0x20000
+  hw_server:  131072 bytes @ 0x240000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x260000 0x20000
+  hw_server:  offset 0x260000, size 0x20000
+  hw_server:  131072 bytes @ 0x260000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x280000 0x20000
+  hw_server:  offset 0x280000, size 0x20000
+  hw_server:  131072 bytes @ 0x280000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x2a0000 0x20000
+  hw_server:  offset 0x2a0000, size 0x20000
+  hw_server:  131072 bytes @ 0x2a0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x2c0000 0x20000
+  hw_server:  offset 0x2c0000, size 0x20000
+  hw_server:  131072 bytes @ 0x2c0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x2e0000 0x20000
+  hw_server:  offset 0x2e0000, size 0x20000
+  hw_server:  131072 bytes @ 0x2e0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x300000 0x20000
+  hw_server:  offset 0x300000, size 0x20000
+  hw_server:  131072 bytes @ 0x300000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x320000 0x20000
+  hw_server:  offset 0x320000, size 0x20000
+  hw_server:  131072 bytes @ 0x320000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x340000 0x20000
+  hw_server:  offset 0x340000, size 0x20000
+  hw_server:  131072 bytes @ 0x340000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x360000 0x20000
+  hw_server:  offset 0x360000, size 0x20000
+  hw_server:  131072 bytes @ 0x360000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x380000 0x20000
+  hw_server:  offset 0x380000, size 0x20000
+  hw_server:  131072 bytes @ 0x380000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x3a0000 0x20000
+  hw_server:  offset 0x3a0000, size 0x20000
+  hw_server:  131072 bytes @ 0x3a0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x3c0000 0x20000
+  hw_server:  offset 0x3c0000, size 0x20000
+  hw_server:  131072 bytes @ 0x3c0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x3e0000 0x20000
+  hw_server:  offset 0x3e0000, size 0x20000
+  hw_server:  131072 bytes @ 0x3e0000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x400000 0x20000
+  hw_server:  offset 0x400000, size 0x20000
+  hw_server:  131072 bytes @ 0x400000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x420000 0x20000
+  hw_server:  offset 0x420000, size 0x20000
+  hw_server:  131072 bytes @ 0x420000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x440000 0x20000
+  hw_server:  offset 0x440000, size 0x20000
+  hw_server:  131072 bytes @ 0x440000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x460000 0x20000
+  hw_server:  offset 0x460000, size 0x20000
+  hw_server:  131072 bytes @ 0x460000 Written: OK
+  hw_server:  
+  hw_server:  sf write 0xe1fe0000 0x480000 0x155c0
+  hw_server:  offset 0x480000, size 0x155c0
+  hw_server:  131072 bytes @ 0x480000 Written: OK
+  hw_server:  Programing finished
+  program_image elapsed_time 47.02 seconds, cpu_time 0.44 seconds
+  program_image used memory 5MB, procise used peak memory 1081MB, current used memory 172MB
+hw_server message connection interrupt, errno code = 0

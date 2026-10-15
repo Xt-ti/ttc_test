@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "fmsh_common.h": "c",
+        "fmsh_common_delay.h": "c"
+    }
+}

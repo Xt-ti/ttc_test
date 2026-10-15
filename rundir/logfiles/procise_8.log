@@ -1,0 +1,374 @@
+Procise 2021.1
+SVN Version : 25818
+Build  time : 2021/12/23 20:32:23
+Start  time : 2022-02-22 08:38:05
+>>set_device fmql45t900
+  set_device elapsed_time 3.61 seconds, cpu_time 3.61 seconds
+  set_device used memory 804MB, procise used peak memory 880MB, current used memory 635MB
+Block Design Name ttc_test
+add_design_file -file C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd 
+There is no avaible top module in current design!
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  There is no avaible top module in current design!
+  load_design used memory 0MB, procise used peak memory 984MB, current used memory 984MB
+Begin to run IP ttc_test_processing_system7_0 coregen
+Coregen finished
+Block Design generate files successfully.
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  load_design elapsed_time 0.20 seconds, cpu_time 0.22 seconds
+  load_design used memory 0MB, procise used peak memory 1040MB, current used memory 1040MB
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+ttc_test_wrapper is created successfully.
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.18 seconds, cpu_time 0.22 seconds
+  load_design used memory 0MB, procise used peak memory 1040MB, current used memory 1038MB
+add_design_file -file C:/Users/bootl/Documents/ProciseWorks/ttc_test/constraints/constrs_1/ttc_test.ucf 
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.18 seconds, cpu_time 0.19 seconds
+  load_design used memory 3MB, procise used peak memory 1046MB, current used memory 1046MB
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.18 seconds, cpu_time 0.23 seconds
+  load_design used memory 8MB, procise used peak memory 1048MB, current used memory 1048MB
+>>rtl_analyze
+  rtl_analyze -> elaborate
+  WARN(ELAB-W-109): C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v(138), empty port "MIO" on module "ttc_test_processing_system7_0" declaration.  
+  WARN(ELAB-W-109): C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v(139), empty port "DDR_Clk" on module "ttc_test_processing_system7_0" declaration.  
+  WARN(ELAB-W-109): C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v(140), empty port "DDR_Clk_n" on module "ttc_test_processing_system7_0" declaration.  
+  WARN(ELAB-W-109): C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v(141), empty port "DDR_CKE" on module "ttc_test_processing_system7_0" declaration.  
+  WARN(ELAB-W-109): C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v(142), empty port "DDR_CS_n" on module "ttc_test_processing_system7_0" declaration.  
+  Info: C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v: message ELAB-W-109 has occurred for too many times, the later same message would be ignored.  
+  start FSM_extraction
+  finish FSM_extraction
+  Info: SDB transformed into DM successfully.  
+  C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v(1): INFO: compiling module 'ttc_test_wrapper' (VERI-1018)
+  write out edif file ttc_test_wrapper_elaborate.edif
+  rtl_analyze -> read edif source files
+  rtl_analyze -> read ip edif files
+  read_edif C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.edif
+  rtl_analyze -> bind_design -verbose 0
+  rtl_analyze -> uniquify
+  rtl_analyze -> read_ucf C:/Users/bootl/Documents/ProciseWorks/ttc_test/constraints/constrs_1/ttc_test.ucf
+  yyparse returns 0! total 2 lines parsed!
+  rtl_analyze elapsed_time 0.12 seconds, cpu_time 0.16 seconds
+  rtl_analyze used memory 6MB, procise used peak memory 1048MB, current used memory 1039MB
+>>synthesize
+  synthesize -> flatten
+  synthesize -> logic opt and lut mapping
+  synthesize -> insert_io -bufg_limit_cnt 16
+  write out edif file ttc_test_wrapper.edif
+  synthesize elapsed_time 0.38 seconds, cpu_time 0.42 seconds
+  synthesize used memory 40MB, procise used peak memory 1074MB, current used memory 1074MB
+place -thread 4;write_phy_design C:/Users/bootl/Documents/ProciseWorks/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_place.phy 
+>>place -thread 4
+  Phase 1 Placer Initialization
+  Check double print.
+  Phase 1.1 Placer Initialization Core
+  Phase 1.1.6 Build Placer Netlist Model
+  Building SiteChkr ...
+    Done.
+  DmCV: 136 insts, 268 nets;
+  TransCV: 134 clusters, 268 cnets
+  FixedCV: 134 clusters, 268 cnets
+  Phase 1.1.6 Build Placer Netlist Model | Time: 2.576s
+  Phase 1.1.5.2 Implementation Feasibility check
+  IO Utilization:
+    Number of bonded IOBs:                          3 out of     362    0%
+  
+  IOPAD Utilization:
+    Number of bonded IOPADs:                      130 out of     212   61%
+  
+  Specific Feature Utilization:
+    Number of RAMH18E1/FIFO18E1s:                   0 out of    1090    0%
+    Number of RAMHFIFO36E1/FIFO36E1s:               0 out of     545    0%
+    Number of GCDU/GCDU_CTRLs:                      0 out of      32    0%
+    Number of ISTCE2/ISTCE2_FINESTCs:               0 out of     400    0%
+    Number of ILGKE2/ILGKE3/ISSE2s:                 0 out of     400    0%
+    Number of OSTC_E2/OSTC_E2_FINESTCs:             0 out of     150    0%
+    Number of OLGKE2/OLGKE3/OSSE2s:                 0 out of     400    0%
+    Number of PSU_IN/PSU_IN_PHYs:                   0 out of      32    0%
+    Number of PSU_OUT/PSU_OUT_PHYs:                 0 out of      32    0%
+    Number of JTBSs:                                0 out of       4    0%
+    Number of HCDU_CEs:                             0 out of     168    0%
+    Number of RCDUs:                                0 out of      32    0%
+    Number of CAPs:                                 0 out of       1    0%
+    Number of DNA_PORTs:                            0 out of       1    0%
+    Number of CU48E1s:                              0 out of     900    0%
+    Number of UNRECOVER_USRs:                       0 out of       1    0%
+    Number of SECTOR_ECCs:                          0 out of       1    0%
+    Number of UHST2E2_CHs:                          0 out of      16    0%
+    Number of UHST2E2_COMs:                         0 out of       4    0%
+    Number of IDU_DS_UHSTE2s:                       0 out of       8    0%
+    Number of UACs:                                 0 out of       2    0%
+    Number of ISTC_CTRLs:                           0 out of       8    0%
+    Number of IFIFOs:                               0 out of      32    0%
+    Number of DCCUE2_ADVs:                          0 out of       8    0%
+    Number of OFIFOs:                               0 out of      32    0%
+    Number of PCIE_2_1s:                            0 out of       1    0%
+    Number of PSU_REFs:                             0 out of       8    0%
+    Number of PHY_CTRLs:                            0 out of       8    0%
+    Number of PLLE2_ADVs:                           0 out of       8    0%
+    Number of BOOTUPs:                              0 out of       1    0%
+    Number of FADCs:                                0 out of       1    0%
+  
+  Phase 1.1.5.2 Implementation Feasibility check | Time: 2.581s
+  Phase 1.1.7 Constrain Clocks/Macros
+  Phase 1.1.7 Constrain Clocks/Macros | Time: 2.606s
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 2.621s
+  Phase 1.1.8 Build Shapes/ HD Config
+  Phase 1.1.8.1 Build Macros
+  Phase 1.1.8.1 Build Macros | Time: 2.622s
+  Phase 1.1.8 Build Shapes/ HD Config | Time: 2.622s
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 2.622s
+  Phase 1.1 Placer Initialization Core | Time: 4.098s
+  Phase 1 Placer Initialization | Time: 4.098s
+  Phase 2 Global Placement
+  Phase 2.1 Distribute Placement
+  Phase 2.1 Distribute Placement | Time: 4.303s
+  hpwl = 535.8
+  hpwl = 535.8
+  Phase 2 Global Placement | Time: 4.304s
+  The worst negtive slack is: 0.000000.
+  The total negtive slack is: 0.000000.
+  Generating physical netlist ... 
+  
+                           DEVICE UTILIZATION                   
+  ------------------------------------------------------------------
+  resource                      used/available     utilization      
+  ------------------------------------------------------------------
+  IOINF                           130/130          100.00%
+  IOU33M                            3/102            2.94%
+  PCPUS_TOP_CORE                    1/1            100.00%
+  ------------------------------------------------------------------
+  FDC_INFO! export constraints to file ttc_test_wrapper_placed.fdc!
+  Phase 3 Detail Placement | Time: 5.944s
+  place elapsed_time 5.97 seconds, cpu_time 6.02 seconds
+  place used memory 310MB, procise used peak memory 1384MB, current used memory 1171MB
+>>write_phy_design C:/Users/bootl/Documents/ProciseWorks/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_place.phy
+  write_phy_design used memory 213MB, procise used peak memory 1384MB, current used memory 1172MB
+route;write_phy_design C:/Users/bootl/Documents/ProciseWorks/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_route.phy 
+>>route
+  DataModel: remove 1 TIE HIGH nets.
+  DataModel: create 2 dummy TIE HIGH nets.
+  DataModel: remove 1 TIE LOW nets.
+  DataModel: created 89 dummy TIE LOW nets.
+  DataModel: remove 89 PULL insts.
+  DataModel: remove 0 CU PULL insts.
+  DataModel: created 0 dummy LC insts.
+  Router: build routing data...
+  Router: 359 nets, 223 insts.
+  Router: sort net pins...
+  Router: initial routability-driven routing...
+  Router: No unrouted net
+  Router: 0 routing nodes have overflow, Time : 0.52 s
+  Router: routability driven finished elapsed_time 0.53 seconds, cpu_time 0.55 seconds
+  Router: pre-processing for timing-driven reroute...
+  Router: no valid timing constraint.
+  Router: successfully routed after 1 iterations.
+  Router: SIGNAL wirelength : 688.
+  Router: CLOCK wirelength  : 0.
+  Router: P/G wirelength    : 0.
+  Router: created 3 dummy I/O insts.
+  route elapsed_time 6.68 seconds, cpu_time 6.72 seconds
+  route used memory 1797MB, procise used peak memory 2970MB, current used memory 1742MB
+>>write_phy_design C:/Users/bootl/Documents/ProciseWorks/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_route.phy
+  write_phy_design used memory 2MB, procise used peak memory 2970MB, current used memory 1739MB
+>>bitgen ttc_test.bit -g bpi_sync_mode:Disable spi_32bit_addr:No spi_buswidth:1 Encrypt:No
+  preprocess elapsed_time 0.01 seconds, cpu_time 16.00 seconds
+  assemble bitstream elapsed_time 0.11 seconds, cpu_time -16.00 seconds
+  Writing out bitstream file ttc_test.bit
+  Writing out bgn file ttc_test.bgn
+  bitgen elapsed_time 0.92 seconds, cpu_time 1.28 seconds
+  bitgen used memory 416MB, procise used peak memory 2970MB, current used memory 1739MB
+>>write_phy_design C:/Users/bootl/Documents/ProciseWorks/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0.phy
+  write_phy_design used memory 1MB, procise used peak memory 2970MB, current used memory 1738MB
+generate IAR example designes successfully.
+>>>Launching IAR...
+>>init_chain -cable_type usb-jtag-smt2
+  hw_server:  JTAG tap: Procise found HwServer chain_info: 0x03731093 (mfg:0x049(FMSH), part:0x3731(jfm7z045), ver:0x0)
+  hw_server:  JTAG tap: Procise found HwServer chain_info: 0x4ba00477 (mfg:0x23b(ARM), part:0xba00(arm_dap), ver:0x4)
+  ----------------------------------------------------------------------
+  device_id:    00000011011100110001000010010011
+  manufacturer: FMSH
+  part_name:    fmql45
+  part_id:      0
+  ir_length:    6
+  version:      0
+  step_id:      0
+  ----------------------------------------------------------------------
+  device_id:    01001011101000000000010001110111
+  manufacturer: FMSH
+  part_name:    ps_dap
+  part_id:      1
+  ir_length:    4
+  version:      0
+  step_id:      0
+  init_chain elapsed_time 3.25 seconds, cpu_time 0.13 seconds
+  init_chain used memory 0MB, procise used peak memory 2970MB, current used memory 1794MB
+>>read_bootsts_stat -reg bootsts -part 0
+  hw_server:  SVF instructions excute success
+  bootsts_data: 00000000000000000000000000000000
+  read_bootsts_stat elapsed_time 1.15 seconds, cpu_time 0.00 seconds
+  read_bootsts_stat used memory 0MB, procise used peak memory 2970MB, current used memory 1747MB
+>>read_bootsts_stat -reg stat -part 0
+  hw_server:  SVF instructions excute success
+  stat_data: 00110000111110000000000000000010
+  read_bootsts_stat elapsed_time 1.06 seconds, cpu_time 0.00 seconds
+  read_bootsts_stat used memory 47MB, procise used peak memory 2970MB, current used memory 1747MB
+>>read_bootsts_stat -reg bootsts -part 1
+  hw_server:  SVF instructions excute success
+  bootsts_data: 00000000000000000000000000000000
+  read_bootsts_stat elapsed_time 1.05 seconds, cpu_time 0.00 seconds
+  read_bootsts_stat used memory 0MB, procise used peak memory 2970MB, current used memory 1747MB
+>>read_bootsts_stat -reg stat -part 1
+  hw_server:  SVF instructions excute success
+  stat_data: 00000000000000000000000000000000
+  read_bootsts_stat elapsed_time 1.06 seconds, cpu_time 0.00 seconds
+  read_bootsts_stat used memory 0MB, procise used peak memory 2970MB, current used memory 1747MB
+>>read_bootsts_stat -reg bootsts -part 1
+  hw_server:  SVF instructions excute success
+  bootsts_data: 00000000000000000000000000000000
+  read_bootsts_stat elapsed_time 1.06 seconds, cpu_time 0.00 seconds
+  read_bootsts_stat used memory 0MB, procise used peak memory 2970MB, current used memory 1751MB
+>>read_bootsts_stat -reg stat -part 1
+  hw_server:  SVF instructions excute success
+  stat_data: 00000000000000000000000000000000
+  read_bootsts_stat elapsed_time 1.06 seconds, cpu_time 0.00 seconds
+  read_bootsts_stat used memory 0MB, procise used peak memory 2970MB, current used memory 1751MB
+>>program_bit C:/Users/bootl/Documents/ProciseWorks/ttc_test/rundir/ttc_test.bit -part 0
+  hw_server:  Accepting 'procise' connection 1584 on tcp 8888
+  BOOTSTS: 0x00000001
+  STAT: 0x40007ffc
+  Startup state machine: Phase 5
+  hw_server:  SVF instructions excute success
+  program_bit elapsed_time 12.02 seconds, cpu_time 0.22 seconds
+  program_bit used memory 38MB, procise used peak memory 2970MB, current used memory 1789MB
+>>>IAR closed.
+Delete files from disk successfully!
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.22 seconds, cpu_time 0.23 seconds
+  load_design used memory 0MB, procise used peak memory 2970MB, current used memory 673MB
+Begin to run IP ttc_test_processing_system7_0 coregen
+Coregen finished
+WARNING: The following pins are not connected!
+/ttc_test/processing_system7_0/TTC1_WAVE0_OUT
+/ttc_test/processing_system7_0/TTC1_WAVE1_OUT
+/ttc_test/processing_system7_0/TTC1_WAVE2_OUT
+
+
+Block Design generate files successfully.
+"C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v" is already in project.
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.19 seconds, cpu_time 0.22 seconds
+  load_design used memory 0MB, procise used peak memory 2970MB, current used memory 651MB
+hw_server message connection interrupt, errno code = 9
+Begin to run IP ttc_test_processing_system7_0 coregen
+Coregen finished
+WARNING: The following pins are not connected!
+/ttc_test/processing_system7_0/TTC1_WAVE0_OUT
+/ttc_test/processing_system7_0/TTC1_WAVE1_OUT
+/ttc_test/processing_system7_0/TTC1_WAVE2_OUT
+
+
+Block Design generate files successfully.
+"C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v" is already in project.
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.20 seconds, cpu_time 0.19 seconds
+  load_design used memory 0MB, procise used peak memory 2970MB, current used memory 664MB
+WARNING: The following pins are not connected!
+/ttc_test/processing_system7_0/TTC1_WAVE0_OUT
+/ttc_test/processing_system7_0/TTC1_WAVE1_OUT
+/ttc_test/processing_system7_0/TTC1_WAVE2_OUT
+
+
+"C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v" is already in project.
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+ttc_test_wrapper is created successfully.
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.20 seconds, cpu_time 0.22 seconds
+  load_design used memory 0MB, procise used peak memory 2970MB, current used memory 648MB
+generate IAR example designes successfully.
+>>>Launching IAR...
+>>>IAR closed.
+Begin to run IP ttc_test_processing_system7_0 coregen
+Coregen finished
+WARNING: The following pins are not connected!
+/ttc_test/processing_system7_0/TTC0_WAVE0_OUT
+/ttc_test/processing_system7_0/TTC0_WAVE1_OUT
+/ttc_test/processing_system7_0/TTC0_WAVE2_OUT
+
+
+Block Design generate files successfully.
+"C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v" is already in project.
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.19 seconds, cpu_time 0.22 seconds
+  load_design used memory 1MB, procise used peak memory 2970MB, current used memory 476MB
+WARNING: The following pins are not connected!
+/ttc_test/processing_system7_0/TTC0_WAVE0_OUT
+/ttc_test/processing_system7_0/TTC0_WAVE1_OUT
+/ttc_test/processing_system7_0/TTC0_WAVE2_OUT
+
+
+"C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v" is already in project.
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+ttc_test_wrapper is created successfully.
+>>load_design -stage_elaborate -no_hier
+  load block design C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'C:/Users/bootl/Documents/ProciseWorks/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.20 seconds, cpu_time 0.23 seconds
+  load_design used memory 1MB, procise used peak memory 2970MB, current used memory 309MB
+generate IAR example designes successfully.
+>>>Launching IAR...
+>>>IAR closed.

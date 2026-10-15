@@ -1,0 +1,82 @@
+place -thread 4;write_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_place.phy 
+>>opt_design
+  opt_design used memory 0MB, procise used peak memory 1102MB, current used memory 1102MB
+>>place -thread 4
+  Phase 1 Placer Initialization
+  Phase 1.1 Placer Initialization Core
+  Phase 1.1.6 Build Placer Netlist Model
+  Building SiteChkr ...
+    Done.
+  Phase 1.1.6 Build Placer Netlist Model | Time: 0.595s
+  Phase 1.1.5.2 Implementation Feasibility check
+  IO Utilization:
+    Number of bonded IOBs:                          0 out of     362    0%
+  
+  IOPAD Utilization:
+    Number of bonded IOPADs:                      130 out of     212   61%
+  
+  Specific Feature Utilization:
+    Number of RAMH18E1/FIFO18E1s:                   0 out of    1090    0%
+    Number of RAMHFIFO36E1/FIFO36E1s:               0 out of     545    0%
+    Number of GCDU/GCDU_CTRLs:                      0 out of      32    0%
+    Number of ISTCE2/ISTCE2_FINESTCs:               0 out of     400    0%
+    Number of ILGKE2/ILGKE3/ISSE2s:                 0 out of     400    0%
+    Number of OSTC_E2/OSTC_E2_FINESTCs:             0 out of     150    0%
+    Number of OLGKE2/OLGKE3/OSSE2s:                 0 out of     400    0%
+    Number of PSU_IN/PSU_IN_PHYs:                   0 out of      32    0%
+    Number of PSU_OUT/PSU_OUT_PHYs:                 0 out of      32    0%
+    Number of JTBSs:                                0 out of       4    0%
+    Number of HCDU_CEs:                             0 out of     168    0%
+    Number of RCDUs:                                0 out of      32    0%
+    Number of CAPs:                                 0 out of       1    0%
+    Number of DNA_PORTs:                            0 out of       1    0%
+    Number of CU48E1s:                              0 out of     900    0%
+    Number of UNRECOVER_USRs:                       0 out of       1    0%
+    Number of SECTOR_ECCs:                          0 out of       1    0%
+    Number of UHST2E2_CHs:                          0 out of      16    0%
+    Number of UHST2E2_COMs:                         0 out of       4    0%
+    Number of IDU_DS_UHSTE2s:                       0 out of       8    0%
+    Number of UACs:                                 0 out of       2    0%
+    Number of ISTC_CTRLs:                           0 out of       8    0%
+    Number of IFIFOs:                               0 out of      32    0%
+    Number of DCCUE2_ADVs:                          0 out of       8    0%
+    Number of OFIFOs:                               0 out of      32    0%
+    Number of PCIE_2_1s:                            0 out of       1    0%
+    Number of PSU_REFs:                             0 out of       8    0%
+    Number of PHY_CTRLs:                            0 out of       8    0%
+    Number of PLLE2_ADVs:                           0 out of       8    0%
+    Number of BOOTUPs:                              0 out of       1    0%
+    Number of FADCs:                                0 out of       1    0%
+  
+  Phase 1.1.5.2 Implementation Feasibility check | Time: 0.603s
+  Phase 1.1.7 Constrain Clocks/Macros
+  Phase 1.1.7 Constrain Clocks/Macros | Time: 0.632s
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 0.654s
+  Phase 1.1.8 Build Shapes/ HD Config
+  Phase 1.1.8.1 Build Macros
+  Phase 1.1.8.1 Build Macros | Time: 0.655s
+  Phase 1.1.8 Build Shapes/ HD Config | Time: 0.655s
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 0.655s
+  Phase 1.1 Placer Initialization Core | Time: 2.147s
+  Phase 1 Placer Initialization | Time: 2.147s
+  Phase 2 Global Placement
+  Phase 2.1 Distribute Placement
+  Phase 2.1 Distribute Placement | Time: 2.364s
+  Phase 2 Global Placement | Time: 2.365s
+  Generating physical netlist ... 
+  
+                           DEVICE UTILIZATION                   
+  ------------------------------------------------------------------
+  resource                      used/available     utilization      
+  ------------------------------------------------------------------
+  IOINF                           130/130          100.00%
+  PCPUS_TOP_CORE                    1/1            100.00%
+  ------------------------------------------------------------------
+  FDC_INFO! export constraints to file ttc_test_wrapper_placed.fdc!
+  "D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir/ttc_test_wrapper_placed.fdc" is already in project.
+  Phase 3 Detail Placement | Time: 4.038s
+  place elapsed_time 4.13 seconds, cpu_time 4.13 seconds
+  place used memory 233MB, procise used peak memory 1335MB, current used memory 1221MB
+>>write_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_place.phy
+  write_phy_design used memory 114MB, procise used peak memory 1335MB, current used memory 1199MB

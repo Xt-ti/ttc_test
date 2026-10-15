@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Version="1.01" Minor="0" Name="ttc_test">
+    <Configuration>
+        <Option Name="Stage" Value="HDL Design loaded"/>
+        <Option Name="Description" Value=""/>
+        <Option Name="Family" Value="fmql"/>
+        <Option Name="Device" Value="fmql45t900"/>
+        <Option Name="Package" Value="fcbga900"/>
+        <Option Name="Speed" Value="-2"/>
+    </Configuration>
+    <FileSets Version="1" Minor="0">
+        <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="sources">
+            <File Path="rundir/.cf33605c63cadd6e8f9f4d3509c100f0.phy">
+                <FileInfo Type="PHY"/>
+            </File>
+            <File Path="rundir/ttc_test_wrapper_elaborate.edif">
+                <FileInfo Type="EDIF_ELABORATE"/>
+            </File>
+            <File Path="rundir/ttc_test_wrapper.edif">
+                <FileInfo Type="EDIF_SYN"/>
+            </File>
+            <File Path="bd/ttc_test/hdl/ttc_test.v">
+                <FileInfo Type="Verilog" Library="work"/>
+            </File>
+            <File Path="bd/ttc_test/hdl/ttc_test_wrapper.v">
+                <FileInfo Type="Verilog" Library="work"/>
+            </File>
+            <Config>
+                <Option Name="TopModule" Value="ttc_test_wrapper"/>
+                <Option Name="TopInstPath" Value="ttc_test_wrapper"/>
+            </Config>
+        </FileSet>
+        <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="constraints/constrs_1">
+            <File Path="rundir/ttc_test_wrapper_placed.fdc">
+                <FileInfo Type="kFDC_PLACED"/>
+            </File>
+            <File Path="rundir/ttc_test_wrapper_synthesized.fdc">
+                <FileInfo Type="kFDC_PLACED"/>
+            </File>
+            <Config>
+                <Option Name="ActiveConstraint" Value=""/>
+            </Config>
+        </FileSet>
+        <FileSet Name="sources_1" Type="BlockSrcs" RelSrcDir="sources_1/BD">
+            <File Path="bd/ttc_test/ttc_test.bd">
+                <FileInfo Type="BD"/>
+            </File>
+        </FileSet>
+    </FileSets>
+    <DesignHierarchy>
+        <Module Name="ttc_test_wrapper" File="ttc_test_wrapper.v" LineNum="1">
+            <Instance Name="ttc_test_i" Module="ttc_test_i" File="ttc_test.bd" LineNum="0">
+                <Instance Name="ttc_test" Module="ttc_test" File="ttc_test.v" LineNum="1">
+                    <Instance Name="processing_system7_0" Module="ttc_test_processing_system7_0" File="ttc_test_processing_system7_0.fmi" LineNum="96"/>
+                </Instance>
+            </Instance>
+        </Module>
+        <Automatic_includes/>
+    </DesignHierarchy>
+    <BspRepositories>
+        <Local folder="D:/Program Files/Fudan Micro/Procise/data/devicetree_rep"/>
+    </BspRepositories>
+</Project>

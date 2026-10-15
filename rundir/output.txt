@@ -1,0 +1,2 @@
+-- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+-- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)

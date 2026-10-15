@@ -1,0 +1,34 @@
+{
+    "all": {
+        "error": [
+        ]
+    },
+    "last_cmd": "load_design",
+    "last_cmd_stage": 2,
+    "load_design": {
+        "error": [
+        ],
+        "log": ">>load_design -stage_elaborate -no_hier\n  load block design D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/ttc_test.bd\n  load ip D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi\n   Instance ttc_test_i in Module ttc_test_wrapper is not defined!\n  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)\n  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)\n  load_design elapsed_time 0.22 seconds, cpu_time 0.25 seconds\n  load_design used memory 8MB, procise used peak memory 960MB, current used memory 719MB\n"
+    },
+    "out_of_date": {
+        "C:/Users/bootl/Documents/ProciseWorks/ttc_test/rundir/ttc_test.bitgen": {
+            "last_modify": "2022-02-22 08:56:23",
+            "reason": "source removedTue Feb 22 09:49:06 2022"
+        },
+        "C:/Users/bootl/Documents/ProciseWorks/ttc_test/rundir/ttc_test.place": {
+            "last_modify": "2022-02-22 08:56:16",
+            "reason": "source removedTue Feb 22 09:49:06 2022"
+        },
+        "C:/Users/bootl/Documents/ProciseWorks/ttc_test/rundir/ttc_test.route": {
+            "last_modify": "2022-02-22 08:56:22",
+            "reason": "source removedTue Feb 22 09:49:06 2022"
+        }
+    },
+    "set_device": {
+        "error": [
+        ],
+        "log": ">>set_device fmql45t900\n  set_device elapsed_time 4.18 seconds, cpu_time 4.16 seconds\n  set_device used memory 891MB, procise used peak memory 960MB, current used memory 706MB\n\n Instance ttc_test_i in Module ttc_test_wrapper is not defined!\n"
+    },
+    "timer": {
+    }
+}

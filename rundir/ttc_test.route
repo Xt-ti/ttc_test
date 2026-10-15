@@ -1,0 +1,26 @@
+route;write_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_route.phy 
+>>route
+  DataModel: remove 1 TIE HIGH nets.
+  DataModel: create 2 dummy TIE HIGH nets.
+  DataModel: remove 1 TIE LOW nets.
+  DataModel: created 89 dummy TIE LOW nets.
+  DataModel: remove 89 PULL insts.
+  DataModel: remove 0 CU PULL insts.
+  DataModel: created 0 dummy LC insts.
+  Router: build routing data...
+  Router: 353 nets, 220 insts.
+  Router: sort net pins...
+  Router: initial routability-driven routing...
+  Router: No unrouted net
+  Router: 0 routing nodes have overflow, Time : 0.55 s
+  Router: routability driven finished elapsed_time 0.59 seconds, cpu_time 0.58 seconds
+  Router: pre-processing for timing-driven reroute...
+  Router: no valid timing constraint.
+  Router: successfully routed after 1 iterations.
+  Router: SIGNAL wirelength : 0.
+  Router: CLOCK wirelength  : 0.
+  Router: P/G wirelength    : 0.
+  route elapsed_time 6.91 seconds, cpu_time 6.92 seconds
+  route used memory 1799MB, procise used peak memory 2995MB, current used memory 1764MB
+>>write_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_route.phy
+  write_phy_design used memory 2MB, procise used peak memory 2995MB, current used memory 1765MB

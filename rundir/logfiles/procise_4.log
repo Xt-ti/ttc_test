@@ -1,0 +1,18 @@
+Procise 2022.1
+SVN Version : 26989
+Build  time : 2022/06/24 09:06:18
+Start  time : 2022-10-31 16:31:35
+>>set_device fmql45t900
+  set_device elapsed_time 4.51 seconds, cpu_time 4.44 seconds
+  set_device used memory 895MB, procise used peak memory 962MB, current used memory 696MB
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_post_map -no_hier
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  read_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir/.cf33605c63cadd6e8f9f4d3509c100f0.phy
+  Read FDC D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir/ttc_test_wrapper_placed.fdc
+  load_design elapsed_time 0.34 seconds, cpu_time 0.36 seconds
+  load_design used memory 9MB, procise used peak memory 962MB, current used memory 724MB
+>>>Launching IAR...
+>>>IAR closed.

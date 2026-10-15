@@ -1,0 +1,211 @@
+Procise 2022.1
+SVN Version : 26989
+Build  time : 2022/06/24 09:06:18
+Start  time : 2022-07-26 18:19:27
+>>set_device fmql45t900
+  set_device elapsed_time 4.28 seconds, cpu_time 4.16 seconds
+  set_device used memory 890MB, procise used peak memory 958MB, current used memory 705MB
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_elaborate -no_hier
+  load block design D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.21 seconds, cpu_time 0.23 seconds
+  load_design used memory 8MB, procise used peak memory 958MB, current used memory 719MB
+>>rtl_analyze
+  rtl_analyze -> elaborate
+  WARN(ELAB-W-109): D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v(126), empty port "MIO" on module "ttc_test_processing_system7_0" declaration.  
+  WARN(ELAB-W-109): D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v(127), empty port "DDR_Clk" on module "ttc_test_processing_system7_0" declaration.  
+  WARN(ELAB-W-109): D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v(128), empty port "DDR_Clk_n" on module "ttc_test_processing_system7_0" declaration.  
+  WARN(ELAB-W-109): D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v(129), empty port "DDR_CKE" on module "ttc_test_processing_system7_0" declaration.  
+  WARN(ELAB-W-109): D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v(130), empty port "DDR_CS_n" on module "ttc_test_processing_system7_0" declaration.  
+  Info: D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v: message ELAB-W-109 has occurred for too many times, the later same message would be ignored.  
+  start FSM_extraction
+  finish FSM_extraction
+  Info: SDB transformed into DM successfully.  
+  D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v(1): INFO: compiling module 'ttc_test_wrapper_default' (VERI-1018)
+  write out edif file ttc_test_wrapper_elaborate.edif
+  rtl_analyze -> read edif source files
+  rtl_analyze -> read ip edif files
+  read_edif D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.edif
+  rtl_analyze -> bind_design -verbose 0
+  rtl_analyze -> uniquify
+  rtl_analyze elapsed_time 0.10 seconds, cpu_time 0.05 seconds
+  rtl_analyze used memory 5MB, procise used peak memory 1073MB, current used memory 1073MB
+>>synthesize
+  synthesize -> flatten
+  synthesize -> logic opt and lut mapping
+  synthesize -> insert_io -bufg_limit_cnt 16
+  write out edif file ttc_test_wrapper.edif
+  FDC_INFO! export constraints to file ttc_test_wrapper_synthesized.fdc!
+  synthesize elapsed_time 0.39 seconds, cpu_time 0.38 seconds
+  synthesize used memory 41MB, procise used peak memory 1102MB, current used memory 1102MB
+place -thread 4;write_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_place.phy 
+>>opt_design
+    DffDupPass : total create 0 insts for model 'ttc_test_wrapper'
+    HfsPass : total split 0 nets for model 'ttc_test_wrapper'
+    DffDupPass : total create 0 insts for model 'ttc_test_wrapper'
+  opt_design used memory 0MB, procise used peak memory 1102MB, current used memory 1102MB
+>>place -thread 4
+  Phase 1 Placer Initialization
+  Phase 1.1 Placer Initialization Core
+  Phase 1.1.6 Build Placer Netlist Model
+  Building SiteChkr ...
+    Done.
+  DmCV: 133 insts, 262 nets;
+  TransCV: 131 clusters, 262 cnets
+  FixedCV: 131 clusters, 262 cnets
+  Phase 1.1.6 Build Placer Netlist Model | Time: 0.595s
+  Phase 1.1.5.2 Implementation Feasibility check
+  IO Utilization:
+    Number of bonded IOBs:                          0 out of     362    0%
+  
+  IOPAD Utilization:
+    Number of bonded IOPADs:                      130 out of     212   61%
+  
+  Specific Feature Utilization:
+    Number of RAMH18E1/FIFO18E1s:                   0 out of    1090    0%
+    Number of RAMHFIFO36E1/FIFO36E1s:               0 out of     545    0%
+    Number of GCDU/GCDU_CTRLs:                      0 out of      32    0%
+    Number of ISTCE2/ISTCE2_FINESTCs:               0 out of     400    0%
+    Number of ILGKE2/ILGKE3/ISSE2s:                 0 out of     400    0%
+    Number of OSTC_E2/OSTC_E2_FINESTCs:             0 out of     150    0%
+    Number of OLGKE2/OLGKE3/OSSE2s:                 0 out of     400    0%
+    Number of PSU_IN/PSU_IN_PHYs:                   0 out of      32    0%
+    Number of PSU_OUT/PSU_OUT_PHYs:                 0 out of      32    0%
+    Number of JTBSs:                                0 out of       4    0%
+    Number of HCDU_CEs:                             0 out of     168    0%
+    Number of RCDUs:                                0 out of      32    0%
+    Number of CAPs:                                 0 out of       1    0%
+    Number of DNA_PORTs:                            0 out of       1    0%
+    Number of CU48E1s:                              0 out of     900    0%
+    Number of UNRECOVER_USRs:                       0 out of       1    0%
+    Number of SECTOR_ECCs:                          0 out of       1    0%
+    Number of UHST2E2_CHs:                          0 out of      16    0%
+    Number of UHST2E2_COMs:                         0 out of       4    0%
+    Number of IDU_DS_UHSTE2s:                       0 out of       8    0%
+    Number of UACs:                                 0 out of       2    0%
+    Number of ISTC_CTRLs:                           0 out of       8    0%
+    Number of IFIFOs:                               0 out of      32    0%
+    Number of DCCUE2_ADVs:                          0 out of       8    0%
+    Number of OFIFOs:                               0 out of      32    0%
+    Number of PCIE_2_1s:                            0 out of       1    0%
+    Number of PSU_REFs:                             0 out of       8    0%
+    Number of PHY_CTRLs:                            0 out of       8    0%
+    Number of PLLE2_ADVs:                           0 out of       8    0%
+    Number of BOOTUPs:                              0 out of       1    0%
+    Number of FADCs:                                0 out of       1    0%
+  
+  Phase 1.1.5.2 Implementation Feasibility check | Time: 0.603s
+  Phase 1.1.7 Constrain Clocks/Macros
+  Phase 1.1.7 Constrain Clocks/Macros | Time: 0.632s
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 0.654s
+  Phase 1.1.8 Build Shapes/ HD Config
+  Phase 1.1.8.1 Build Macros
+  Phase 1.1.8.1 Build Macros | Time: 0.655s
+  Phase 1.1.8 Build Shapes/ HD Config | Time: 0.655s
+  Phase 1.1.5 IO Placement/ Clock Placement/ Build Placer Device | Time: 0.655s
+  Phase 1.1 Placer Initialization Core | Time: 2.147s
+  Phase 1 Placer Initialization | Time: 2.147s
+  Phase 2 Global Placement
+  Phase 2.1 Distribute Placement
+  Phase 2.1 Distribute Placement | Time: 2.364s
+  hpwl = 32.5
+  hpwl = 32.5
+  Phase 2 Global Placement | Time: 2.365s
+  The worst negtive slack is: 0.000000.
+  The total negtive slack is: 0.000000.
+  Generating physical netlist ... 
+  
+                           DEVICE UTILIZATION                   
+  ------------------------------------------------------------------
+  resource                      used/available     utilization      
+  ------------------------------------------------------------------
+  IOINF                           130/130          100.00%
+  PCPUS_TOP_CORE                    1/1            100.00%
+  ------------------------------------------------------------------
+  FDC_INFO! export constraints to file ttc_test_wrapper_placed.fdc!
+  "D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir/ttc_test_wrapper_placed.fdc" is already in project.
+  Phase 3 Detail Placement | Time: 4.038s
+  place elapsed_time 4.13 seconds, cpu_time 4.13 seconds
+  place used memory 233MB, procise used peak memory 1335MB, current used memory 1221MB
+>>write_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_place.phy
+  write_phy_design used memory 114MB, procise used peak memory 1335MB, current used memory 1199MB
+route;write_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_route.phy 
+>>route
+  DataModel: remove 1 TIE HIGH nets.
+  DataModel: create 2 dummy TIE HIGH nets.
+  DataModel: remove 1 TIE LOW nets.
+  DataModel: created 89 dummy TIE LOW nets.
+  DataModel: remove 89 PULL insts.
+  DataModel: remove 0 CU PULL insts.
+  DataModel: created 0 dummy LC insts.
+  Router: build routing data...
+  Router: 353 nets, 220 insts.
+  Router: sort net pins...
+  Router: initial routability-driven routing...
+  Router: No unrouted net
+  Router: 0 routing nodes have overflow, Time : 0.55 s
+  Router: routability driven finished elapsed_time 0.59 seconds, cpu_time 0.58 seconds
+  Router: pre-processing for timing-driven reroute...
+  Router: no valid timing constraint.
+  Router: successfully routed after 1 iterations.
+  Router: SIGNAL wirelength : 0.
+  Router: CLOCK wirelength  : 0.
+  Router: P/G wirelength    : 0.
+  route elapsed_time 6.91 seconds, cpu_time 6.92 seconds
+  route used memory 1799MB, procise used peak memory 2995MB, current used memory 1764MB
+>>write_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0_route.phy
+  write_phy_design used memory 2MB, procise used peak memory 2995MB, current used memory 1765MB
+>>bitgen ttc_test.bit -g bpi_sync_mode:Disable spi_32bit_addr:No spi_buswidth:1 Encrypt:No
+  preprocess elapsed_time 0.02 seconds, cpu_time 16.00 seconds
+  assemble bitstream elapsed_time 0.03 seconds, cpu_time -16.00 seconds
+  Writing out bitstream file ttc_test.bit
+  Writing out bgn file ttc_test.bgn
+  bitgen elapsed_time 0.92 seconds, cpu_time 1.08 seconds
+  bitgen used memory 417MB, procise used peak memory 2995MB, current used memory 1775MB
+>>write_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir//.cf33605c63cadd6e8f9f4d3509c100f0.phy
+  write_phy_design used memory 1MB, procise used peak memory 2995MB, current used memory 1766MB
+>>init_chain -cable_type jlink
+  hw_server:  Jlink speed is already 6000khz
+  hw_server:  JTAG tap: Procise found HwServer chain_info: 0x03731093 (mfg:0x049(FMSH), part:0x3731(jfm7z045), ver:0x0)
+  hw_server:  read rsvd_reg_7
+  hw_server:  read rsvd value 0x00000000 ! 
+
+  hw_server:  JTAG tap: Procise found HwServer chain_info: 0x4ba00477 (mfg:0x23b(ARM), part:0xba00(arm_dap), ver:0x4)
+  ----------------------------------------------------------------------
+  device_id:    00000011011100110001000010010011
+  manufacturer: FMSH
+  part_name:    fmql45
+  part_id:      0
+  ir_length:    6
+  version:      0
+  step_id:      0
+  ----------------------------------------------------------------------
+  device_id:    01001011101000000000010001110111
+  manufacturer: FMSH
+  part_name:    ps_dap
+  part_id:      1
+  ir_length:    4
+  version:      0
+  step_id:      0
+  hw_server:  SVF instructions excute success
+  init_chain elapsed_time 0.03 seconds, cpu_time 0.02 seconds
+  init_chain used memory 0MB, procise used peak memory 2995MB, current used memory 1773MB
+>>program_bit D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir/ttc_test.bit -part 0
+  hw_server:  Accepting 'procise' connection 1864 on tcp 8888
+  hw_server:  The initial jlink speed is 6000khz, adjust the speed to 12000khz automatically when scan big data
+  hw_server:  Set Jlink speed to 12000khz successfully
+  hw_server:  scan big data finished, set cable speed back to 6000khz
+  hw_server:  Set Jlink speed to 6000khz successfully
+  BOOTSTS: 0x00000001
+  STAT: 0x40007ffc
+  Startup state machine: Phase 5
+  hw_server:  SVF instructions excute success
+  program_bit elapsed_time 56.97 seconds, cpu_time 0.86 seconds
+  program_bit used memory 38MB, procise used peak memory 2995MB, current used memory 1816MB
+>>>Launching IAR...
+>>>IAR closed.

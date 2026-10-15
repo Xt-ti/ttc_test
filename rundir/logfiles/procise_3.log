@@ -1,0 +1,17 @@
+Procise 2022.1
+SVN Version : 27787
+Build  time : 2022/11/08 16:07:52
+Start  time : 2022-11-21 18:41:12
+>>set_device fmql45t900
+  set_device elapsed_time 4.23 seconds, cpu_time 4.27 seconds
+  set_device used memory 889MB, procise used peak memory 964MB, current used memory 705MB
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_post_map -no_hier
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  read_phy_design D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir/.cf33605c63cadd6e8f9f4d3509c100f0.phy
+  Read FDC D:/Work/03_PSOC/01_HuiZong/ttc_test/rundir/ttc_test_wrapper_placed.fdc
+    WARNING: CONSTRAINT-1520: UCF Warning! inst {ttc_test_i/processing_system7_0/inst/PS7_i} constraint {LOC} redefined at {unknown:1}
+  load_design elapsed_time 0.33 seconds, cpu_time 0.34 seconds
+  load_design used memory 9MB, procise used peak memory 964MB, current used memory 722MB

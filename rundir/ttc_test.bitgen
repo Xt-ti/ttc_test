@@ -1,0 +1,7 @@
+>>bitgen ttc_test.bit -g bpi_sync_mode:Disable spi_32bit_addr:No spi_buswidth:1 Encrypt:No
+  preprocess elapsed_time 0.02 seconds, cpu_time 16.00 seconds
+  assemble bitstream elapsed_time 0.03 seconds, cpu_time -16.00 seconds
+  Writing out bitstream file ttc_test.bit
+  Writing out bgn file ttc_test.bgn
+  bitgen elapsed_time 0.92 seconds, cpu_time 1.08 seconds
+  bitgen used memory 417MB, procise used peak memory 2995MB, current used memory 1775MB

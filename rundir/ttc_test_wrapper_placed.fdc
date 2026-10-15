@@ -1,0 +1,13 @@
+# exported FDC from constraint manager
+
+# config constraints
+
+# inst constraints
+set_property LOC PCPUS_TOP_CORE_X0Y0 [get_cells {ttc_test_i/processing_system7_0/inst/PS7_i}]
+
+# net constraints
+
+# pin constraints
+
+# timing constraints
+

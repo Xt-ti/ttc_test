@@ -1,0 +1,20 @@
+Procise 2023.1
+SVN Version : 28852
+Build  time : 2023/06/26 15:21:15
+Start  time : 2023-07-20 09:11:55
+>>set_device fmql45t900
+  set_device elapsed_time 4.18 seconds, cpu_time 4.16 seconds
+  set_device used memory 891MB, procise used peak memory 960MB, current used memory 706MB
+ Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+>>load_design -stage_elaborate -no_hier
+  load block design D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/ttc_test.bd
+  load ip D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/ip/ttc_test_processing_system7_0/ttc_test_processing_system7_0.fmi
+   Instance ttc_test_i in Module ttc_test_wrapper is not defined!
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test.v' (VERI-1482)
+  -- Analyzing Verilog file 'D:/Work/03_PSOC/01_HuiZong/ttc_test/bd/ttc_test/hdl/ttc_test_wrapper.v' (VERI-1482)
+  load_design elapsed_time 0.22 seconds, cpu_time 0.25 seconds
+  load_design used memory 8MB, procise used peak memory 960MB, current used memory 719MB
+Ps7 settings version: 200
+>>>Launching IAR...
+Ps7 settings version: 200
+>>>IAR closed.

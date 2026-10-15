@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<position>
+  <Instances>
+    <Instance>
+      <name>processing_system7_0</name>
+      <x>2155</x>
+      <y>3870</y>
+    </Instance>
+  </Instances>
+  <Ports>
+    <Port>
+      <name>DDR</name>
+      <side>Right</side>
+      <x>2500</x>
+      <y>3820</y>
+    </Port>
+    <Port>
+      <name>FIXED_IO</name>
+      <side>Right</side>
+      <x>2500</x>
+      <y>3840</y>
+    </Port>
+  </Ports>
+</position>

@@ -1,0 +1,3 @@
+>>syn_project -scr ttc_test_processing_system7_0.scr -prj ttc_test_processing_system7_0.prj -use_worklib false
+  syn_project elapsed_time 4.54 seconds, cpu_time 4.48 seconds
+  syn_project used memory 893MB, procise used peak memory 937MB, current used memory 676MB
